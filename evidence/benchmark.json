@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-10-25T11:58:25.324068+00:00",
+  "python": "3.12.14",
+  "scope": "one remote tile; 1 initial request + 10 sequential repeats, local HTTP client; no throughput/SLO claim",
+  "cache_states": [
+    "MISS",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT",
+    "HIT"
+  ],
+  "tile_path": "/tiles/wuhan-green/13/6699/3365.png",
+  "durations_ms": [
+    5977.456299995538,
+    4.528799996478483,
+    3.948600002331659,
+    3.6983000027248636,
+    3.7829000066267326,
+    3.6666999949375167,
+    3.382199996849522,
+    3.3017999958246946,
+    3.461599990259856,
+    3.583799989428371,
+    3.3881999988807365
+  ],
+  "first_request_ms": 5977.456299995538,
+  "warm_p50_ms": 3.625249992182944,
+  "warm_p95_ms": 4.2677099991124114,
+  "job_total_ms": 3430.6665000040084,
+  "job": {
+    "id": "795148e03c576a21ec616f5482a93bdabac6282cbeaa96a376f0c3a634e98f06",
+    "payload": {
+      "bbox": [
+        114.38,
+        30.54,
+        114.4,
+        30.56
+      ],
+      "dataset": "wuhan-green",
+      "revision": "S2A_50RKU_20210921_0_L2A-B03-v1"
+    },
+    "state": "succeeded",
+    "result": {
+      "count": 44522,
+      "total_pixels": 44522,
+      "nodata_pixels": 0,
+      "min": 0.028300000000000002,
+      "max": 0.2338,
+      "mean": 0.07164545393288711,
+      "std_population": 0.012810640739986251,
+      "p05": 0.0432,
+      "p50": 0.0737,
+      "p95": 0.0775,
+      "crs": "EPSG:32650",
+      "window": [
+        4866,
+        1626,
+        197,
+        226
+      ],
+      "pixel_centers_envelope_wgs84": [
+        114.38,
+        30.54,
+        114.4,
+        30.56
+      ],
+      "source_revision": "S2A_50RKU_20210921_0_L2A-B03-v1",
+      "cloud_mask_applied": false,
+      "method": "native-resolution projected envelope, pixel centers; no resampling",
+      "valid_values_sha256": "7e90e70cdce9cb518e17adeca97ca7d7ae4d8b1258d15f7c0312c5512c9ae3a7"
+    },
+    "error": null,
+    "created": 1792929501.8674934,
+    "updated": 1792929505.1654265
+  },
+  "deduplication_verified": true,
+  "metrics": {
+    "tile_cache": {
+      "entries": 1,
+      "capacity": 64,
+      "ttl_seconds": 300,
+      "hits": 10,
+      "misses": 1,
+      "in_flight": 0
+    },
+    "maximum_parallel_tiles": 4,
+    "maximum_pending_statistics": 16,
+    "note": "In-process counters reset on restart; not an SLO or distributed metric."
+  }
+}
